@@ -1,0 +1,40 @@
+{
+  "name": "toposort-ts",
+  "version": "1.0.0",
+  "description": "topological sort in TypeScript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config ./jest.config.js test/",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanwutk/toposort-ts.git"
+  },
+  "keywords": [
+    "topological",
+    "sort"
+  ],
+  "author": "Chanwut Kittivorawong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chanwutk/toposort-ts/issues"
+  },
+  "homepage": "https://github.com/chanwutk/toposort-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
