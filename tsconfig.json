@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2015",
-    "module": "umd",
+    "module": "ES2015",
     "moduleResolution": "Node",
 
     "esModuleInterop": true,
@@ -11,7 +11,6 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
 
-    "outDir": "./lib",
     "declaration": true,
     "strict": true
   },
