@@ -1,5 +1,15 @@
 {
-  "printWidth": 100,
-  "trailingComma": "all",
-  "singleQuote": true
+  "overrides": [
+    {
+      "files": "*",
+      "options": {
+        "printWidth": 80,
+        "singleQuote": true,
+        "bracketSpacing": false,
+        "arrowParens": "avoid",
+        "trailingComma": "all",
+        "proseWrap": "always"
+      }
+    }
+  ]
 }
