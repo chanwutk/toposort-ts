@@ -1,9 +1,12 @@
 {
   "name": "toposort-ts",
-  "version": "1.1.0",
+  "version": "1.2.4",
   "description": "topological sort in TypeScript",
-  "main": "lib/index.js",
-  "types": "lib/index.d.js",
+  "unpkg": "build/toposort.min.js",
+  "jsdelivr": "build/toposort.min.js",
+  "module": "build/toposort.module.js",
+  "main": "build/toposort.js",
+  "types": "build/index.d.js",
   "scripts": {
     "prebuild": "rm -rf build",
     "build": "rollup -c",

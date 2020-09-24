@@ -1,6 +1,10 @@
-import resolve from '@rollup/plugin-node-resolve';
+import path from 'path';
+
 import typescript from 'rollup-plugin-typescript2';
 import {terser} from 'rollup-plugin-terser';
+import bundleSize from 'rollup-plugin-bundle-size';
+
+const BUILD = 'build';
 
 const output = {
   sourcemap: true,
@@ -11,8 +15,13 @@ const output = {
 export default {
   input: 'src/index.ts',
   output: [
-    {...output, file: 'build/toposort.js'},
-    {...output, file: 'build/toposort.min.js', plugins: [terser()]},
+    {
+      file: path.join(BUILD, 'toposort.module.js'),
+      sourcemap: true,
+      format: 'esm',
+    },
+    {...output, file: path.join(BUILD, 'toposort.js')},
+    {...output, file: path.join(BUILD, 'toposort.min.js'), plugins: [terser()]},
   ],
-  plugins: [resolve({browser: true}), typescript({tsconfig: 'tsconfig.json'})],
+  plugins: [typescript({tsconfig: 'tsconfig.json'}), bundleSize()],
 };
