@@ -41,7 +41,7 @@ console.log(toposort(edges));
 ```html
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/toposort-ts@1.2.4/build/toposort.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toposort-ts@1.3.1/build/toposort.min.js"></script>
   </head>
   <body>
     <script>
