@@ -1,4 +1,6 @@
-# Topological Sort in TypeScript
+# Universal Topological Sort
+
+## Supports both JavaScript/TypeScript and HTML imports
 
 [![](https://data.jsdelivr.com/v1/package/npm/toposort-ts/badge)](https://www.jsdelivr.com/package/npm/toposort-ts)
 
@@ -66,3 +68,7 @@ function signature:
 ```typescript
 function toposort<N extends string | number>(edges: [N, N][]): N[];
 ```
+
+## Reference
+
+- https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/

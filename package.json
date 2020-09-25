@@ -1,7 +1,7 @@
 {
   "name": "toposort-ts",
-  "version": "1.3.2",
-  "description": "topological sort in TypeScript",
+  "version": "1.3.3",
+  "description": "Universal Topological Sort that supports both JS/TS and HTML imports",
   "unpkg": "build/toposort.min.js",
   "jsdelivr": "build/toposort.min.js",
   "module": "build/toposort.module.js",
