@@ -50,7 +50,7 @@ console.log(toposort(edges));
   <body>
     <script>
       console.log(
-        toposort.toposort([
+        toposort([
           [1, 2],
           [2, 3],
         ]),
