@@ -31,13 +31,13 @@ console.log(toposort(edges));
 ```javascript
 const toposort = require('toposort-ts');
 
-const edges: [number, number][] = [
-  [1, 2],
-  [2, 3],
+const edges: [string, string][] = [
+  ['1', '2'],
+  ['2', '3'],
 ];
 
 console.log(toposort(edges));
-// [1, 2, 3]
+// ['1', '2', '3']
 ```
 
 ## HTML import example
@@ -66,7 +66,7 @@ this module only export `toposort` function (and as default). Here is its
 function signature:
 
 ```typescript
-function toposort<N extends string | number>(edges: [N, N][]): N[];
+function toposort<N>(edges: [N, N][]): N[];
 ```
 
 ## Reference

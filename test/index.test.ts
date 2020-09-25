@@ -2,7 +2,7 @@ import toposort from '../src/index';
 
 test('empty', () => expect(toposort([]).length).toBe(0));
 
-function correctOrder<N extends string | number>(edges: [N, N][], result: N[]) {
+function correctOrder<N>(edges: [N, N][], result: N[]) {
   edges.forEach(([parent, child]) =>
     expect(
       result.findIndex(d => d === parent) < result.findIndex(d => d === child),
@@ -10,7 +10,7 @@ function correctOrder<N extends string | number>(edges: [N, N][], result: N[]) {
   );
 }
 
-test('small', () => {
+test('number node', () => {
   const edges: [number, number][] = [
     [5, 2],
     [5, 0],
@@ -23,7 +23,7 @@ test('small', () => {
   correctOrder(edges, toposort(edges));
 });
 
-test('small string', () => {
+test('string node', () => {
   const edges: [string, string][] = [
     ['5', '2'],
     ['5', '0'],
