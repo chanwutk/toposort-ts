@@ -1,4 +1,4 @@
-export function toposort<N extends string | number>(edges: [N, N][]) {
+export default function toposort<N extends string | number>(edges: [N, N][]) {
   const indegree = new Map<N, number>();
   const children = new Map<N, N[]>();
 
