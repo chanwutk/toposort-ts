@@ -1,5 +1,7 @@
 # Topological Sort in TypeScript
 
+[![](https://data.jsdelivr.com/v1/package/npm/toposort-ts/badge)](https://www.jsdelivr.com/package/npm/toposort-ts)
+
 ## JavaScript/TypeScript import example
 
 ### installation
@@ -41,7 +43,7 @@ console.log(toposort(edges));
 ```html
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/toposort-ts@1.3.1/build/toposort.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toposort-ts/build/toposort.min.js"></script>
   </head>
   <body>
     <script>
